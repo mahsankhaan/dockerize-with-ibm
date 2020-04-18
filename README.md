@@ -9,9 +9,6 @@ Steps :
 
 ## 1. History of different architectures before Docker Platform
 
-[image]
-
-
 Before going through these architecutre let me clear you all architectures practices are good and it totally depends on your infrastructure usecase.
 
 ### Traditional architecture  :
@@ -104,13 +101,31 @@ Docker run: Once the image is available on the local machine we can run the imag
 
 
 #### 5. Push Docker image to your namespace
+
 We have already created our namespace in step 4, now let's push our local image to IBM container registry namespace.
 
 1. Run command `ibmcloud cr login`  to log into IBM Cloud Container Registry.
 2. Now you must able to see **Logged in to 'us.icr.io'**. Same region we created before.
 3. Run command `ibmcloud cr namespace` to see your namespace
-4. Now tag the image that is on our local machine. Run `docker tag hello-world:latest us.icr.io/namespace_check/nodeapp:v1` **NOTE: This command can be different for you so be careful "<region>.icr.io/<my_namespace>/<image_repo>:<tag>"
+4. Now tag the image that is on our local machine. Run `docker tag hello-world:latest us.icr.io/namespace_check/nodeapp:v1` **NOTE: This command can be different for you so be careful** "<region>.icr.io/<my_namespace>/<image_repo>:<tag>"
 5. Check if the image is successfully tagged `docker images`
 6. Run command `docker push us.icr.io/namespace_check/nodeapp:v1` to push our tagged image on IBM container registry namespace.
 7. `ibmcloud cr images` to check if your image is successfully pushed
+ 
+ 
+#### 6. Pull and Run the image
+
+Now our image is available on IBM container registry, let's pull the image to our local machine and run it as a container.
+
+1. To pull image run command `docker pull us.icr.io/namespace_check/nodeapp:v1` 
+2. Now check if image is successfully pulled, `docker images`
+3. Let's run image as container, `docker run -d -p 3000:3000 us.icr.io/namespace_check/nodeapp:v1 `
+
+-d: Means detached, so that the terminal does not get stuck
+-p: specifying the port that will be mapped to the container
+
+4. Run command `docker container list` to check container is up and running. 
+5. Open browser http://localhost:3000/ .
+6. Stop the container `docker stop 195d61ece4b0` , stop by the container_id
+
 
