@@ -7,8 +7,6 @@ Steps :
 3. [IBM Container Registry & Docker together](#IBM-Container-Registry-Architecture)
 4. [Demo](#demo)
 
-
-
 ## 1. History of different architectures before Docker Platform
 
 [image]
@@ -25,7 +23,6 @@ IBM has done the first virtualization in 1960 on System 370. How it works? We ha
 
 ### Container architecture:
 Containers are one of the latest approaches in which when we install a container platform it directly uses the host OS. Therefore, containers are considered lightweight because a container has its own filesystem, CPU, memory, process space, and more but no OS defined in it.  As they are decoupled from the underlying infrastructure, they are portable across clouds and OS distributions. Now we can run thousands of applications as containers without worrying about if some containers go down what happens? Within a second container can get up without causing any problems to other containers running.
-
 
 
 
@@ -83,14 +80,16 @@ Like this, the complete development lifecycle could be much easier and quicker. 
 
 
 ### Steps:
-1. [Install IBM Cloud CLI](#1-install-ibm-cloud-cli) 
-2. [Log in to IBM Cloud  ](#2-log-in-to-ibm-cloud) 
+1. [Install IBM Cloud CLI](#1-install-ibm-cloud-cli)
+2. [Let's Dockerize the application](#2-let's-dockerizr-the-application)
+3. [Log in to IBM Cloud](#3-log-in-to-ibm- cloud)
+4. [Setup a Namespace](#4-setup-a-namespace)
+5. [Push Docker image to your namespace](#push-docker-image-to-your-namespace)
+6. [Pull and Run the image](#pull-and-run-the-image)
 
 
 
 #### 1. Install IBM Cloud CLI
-
-
 1. For Mac and Linux™, run the following command: `curl -sL https://ibm.biz/idt-installer | bash`
 
 2. For Windows™ 10 Pro, run the following command as an administrator:`[Net.ServicePointManager]::SecurityProtocol = "Tls12, Tls11, Tls, Ssl3"; iex(New-Object   Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')`
