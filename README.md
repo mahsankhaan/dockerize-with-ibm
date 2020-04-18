@@ -4,8 +4,8 @@ In this tutorial we will learn how contaniers are different from the perivous ar
 Steps :
 1. [History of different architectures before Docker Platform](#1-history-of-different-architectures-before-docker-platform)
 2. [Docker Architecture](#2-docker-architecture)
-3. [IBM Container Registry & Docker together](#IBM-Container-Registry-Architecture)
-4. [Demo](#demo)
+3. [IBM Container Registry & Docker together](#3-IBM-Container-Registry-Architecture)
+4. [Demo](#4-demo)
 
 ## 1. History of different architectures before Docker Platform
 
@@ -26,6 +26,7 @@ Containers are one of the latest approaches in which when we install a container
 
 
 
+## 2. Docker Architecture
 
 
 Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
@@ -44,6 +45,7 @@ What are containers? Actually, containers are running an instance of an image.
 
 Docker pull: The image is already available on some registry, and you just need to pull that image on the local machine. 
 
+IBM Container Registry & Docker together
 What is registry ?
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use. 
 
