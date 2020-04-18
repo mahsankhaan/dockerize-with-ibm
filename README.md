@@ -74,14 +74,22 @@ Docker run: Once the image is available on the local machine we can run the imag
 
 3. To verify that the CLI installed successfully, run the help command: `ibmcloud dev help`
 
-#### 2. Let's Dockerize the application
+#### 2. Lets Dockerize the application
+1. Run command  `git clone https://github.com/mahsankhaan/dockerize-with-ibm.git`.   
+2. Now change to the directory where you cloned the application, in my case: `muhammadahsankhana$ cd Downloads/dockerize-with-ibm/`
+3. Once inside the directory check if you have all the files available. run command `ls`
+4. There you can see DockerFile already created for you. Let's understand the docker file : 
+ LINE 1: The first thing we need to do is define from what image we want to build from. As for our scenario, we're containerizing the Node app so we shall use an official Node image with the latest version.
+ LINE 2: Next we create a directory to hold the application code inside the image. we are setting up `/app`
+ LINE 3 & 4:  We will copy all our package files and bundle app's source code inside the Docker image.
+ LINE 5:  Install Dependencies 
+ LINE 6:  Expose port 3000 to the outside world once the container has launched.
+LINE 7: Describes what should be executed first when the Docker image is launching.
 
-1. Open your terminal and run the command `ibmcloud login` 
-2. Enter Email and Password of your IBM account that you setup while creating the account.
-3. Once successfully login, you will able to see **Authenticating...OK**
-4. If you have multiple accounts then kindly select your preferred account from the option. Example Muhammad Ahsan Khan's Account (ae4eed79ad174e76882b8e52f525b38e)
-5. Now in **Select a region** section you can skip for now.
-6. This is a major upgrade that may have potential breaking changes. Do you want to update? [y/N]. Select **Y**
+5. Run command `docker build -t hello-world . ` to build a Docker image.
+**NOTE : You have to be in the project where Dockerfile is available and don't forget to add  "." at the end of the command above **'
+
+6. To verify the image is successfully created,  run command `docker images` There must be your image as hello-world.
 
 
 #### 3. Log in to IBM Cloud 
