@@ -49,27 +49,6 @@ A Docker registry stores Docker images. Docker Hub is a public registry that any
 
 Docker run: Once the image is available on the local machine we can run the image as a container using the run command and can create as many containers of that image as required.
 
-
-IBM Container Registry & Docker together :
-IBM and Docker together can really make the development lifecycle easier with higher scalability and reliability.
-
-Suppose there is a team of two developers, working on one project.
-
-Steps:
-1. Developer 1 will do the local development in VS code of node.js application.
-2. Once the development is completed,  Build command would be used to create the image that will contain all the dependencies and steps required to run the code. 
-3. Developer will connect to IBM Cloud through CLI , create and new namespace.
-4. Once the namespace is created now, the local image would be push to the IBM Container registry.   
-5. Now developer 2 will connect to IBM Cloud.
-6. Pull the image from the namespace.
-7. Integrate new functionalities and update the version of application.
-8. Build the image again.
-9. Push it to the same namespace with updated version.
-
-Like this, the complete development lifecycle could be much easier and quicker. For higher availability, users can deploy their images to the multi regions with different namespaces incase of failure. Once both the developers are satisfied with the test environment they can simply deploy the finalize image to the production.
-
-
-
 ## 4. Demo
 ### Pre-requisites:
 1. Create IBM Cloud Account [Here](http://ibm.biz/dockerize)
