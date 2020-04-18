@@ -55,7 +55,7 @@ Docker run: Once the image is available on the local machine we can run the imag
 ### Pre-requisites:
 1. Create IBM Cloud Account [Here](http://ibm.biz/dockerize)
 
-2 . Install docker on your local machine :
+2. Install docker on your local machine :
 [Mac](https://docs.docker.com/docker-for-mac/install/)
 [Windows](https://docs.docker.com/docker-for-windows/install/)
 
@@ -65,15 +65,16 @@ Docker run: Once the image is available on the local machine we can run the imag
 2. [Let's Dockerize the application](#2-let's-dockerizr-the-application)
 3. [Log in to IBM Cloud](#3-log-in-to-ibm- cloud)
 4. [Setup a Namespace](#4-setup-a-namespace)
-5. [Push Docker image to your namespace](#push-docker-image-to-your-namespace)
-6. [Pull and Run the image](#pull-and-run-the-image)
+5. [Push Docker image to your namespace](#5-push-docker-image-to-your-namespace)
+6. [Pull and Run the image](#6-pull-and-run-the-image)
 
 
 
 #### 1. Install IBM Cloud CLI
 1. For Mac and Linux™, run the following command: `curl -sL https://ibm.biz/idt-installer | bash`
 
-2. For Windows™ 10 Pro, run the following command as an administrator:`[Net.ServicePointManager]::SecurityProtocol = "Tls12, Tls11, Tls, Ssl3"; iex(New-Object   Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')`
+2. For Windows™ 10 Pro, run the following command as an administrator:
+`[Net.ServicePointManager]::SecurityProtocol = "Tls12, Tls11, Tls, Ssl3"; iex(New-Object   Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')`
 
 3. To verify that the CLI installed successfully, run the help command: `ibmcloud dev help`
 
