@@ -59,8 +59,8 @@ Docker run: Once the image is available on the local machine we can run the imag
 
 ### Steps:
 1. [Install IBM Cloud CLI](#1-install-ibm-cloud-cli)
-2. [Let's Dockerize the application](#2-let's-dockerizr-the-application)
-3. [Log in to IBM Cloud](#3-log-in-to-ibm- cloud)
+2. [Lets Dockerize the application](#2-lets-dockerizr-the-application)
+3. [Log in to IBM Cloud](#3-log-in-to-ibm-cloud)
 4. [Setup a Namespace](#4-setup-a-namespace)
 5. [Push Docker image to your namespace](#5-push-docker-image-to-your-namespace)
 6. [Pull and Run the image](#6-pull-and-run-the-image)
@@ -74,7 +74,7 @@ Docker run: Once the image is available on the local machine we can run the imag
 
 3. To verify that the CLI installed successfully, run the help command: `ibmcloud dev help`
 
-#### 2. Log in to IBM Cloud 
+#### 2. Let's Dockerize the application
 
 1. Open your terminal and run the command `ibmcloud login` 
 2. Enter Email and Password of your IBM account that you setup while creating the account.
@@ -84,7 +84,7 @@ Docker run: Once the image is available on the local machine we can run the imag
 6. This is a major upgrade that may have potential breaking changes. Do you want to update? [y/N]. Select **Y**
 
 
-#### 3. IBM Container Registry & Docker together
+#### 3. Log in to IBM Cloud 
  
 1. Open your terminal and run the command `ibmcloud login`
 2. Enter Email and Password of your IBM account that you setup while creating the account.
