@@ -59,7 +59,7 @@ Docker run: Once the image is available on the local machine we can run the imag
 
 ### Steps:
 1. [Install IBM Cloud CLI](#1-install-ibm-cloud-cli)
-2. [Lets Dockerize the application](#2-lets-dockerizr-the-application)
+2. [Lets Dockerize the application](#2-lets-dockerize-the-application)
 3. [Log in to IBM Cloud](#3-log-in-to-ibm-cloud)
 4. [Setup a Namespace](#4-setup-a-namespace)
 5. [Push Docker image to your namespace](#5-push-docker-image-to-your-namespace)
@@ -101,7 +101,7 @@ LINE 7: Describes what should be executed first when the Docker image is launchi
 5. Now in Select a region section you can skip for now.
 
 
-#### 4.Setup a namespace
+#### 4. Setup a namespace
 1. Target IBM Cloud Container Registry region:  `ibmcloud cr region-set us-south` 
 2. Let's create a namespace in the above target region `ibmcloud cr namespace-add namespace-check`
    **NOTE:If you got FAILED error try to change the name of the namespace**
