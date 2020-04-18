@@ -69,7 +69,6 @@ Docker run: Once the image is available on the local machine we can run the imag
 6. [Pull and Run the image](#6-pull-and-run-the-image)
 
 
-
 #### 1. Install IBM Cloud CLI
 1. For Mac and Linux™, run the following command: `curl -sL https://ibm.biz/idt-installer | bash`
 
@@ -97,23 +96,21 @@ Docker run: Once the image is available on the local machine we can run the imag
 5. Now in Select a region section you can skip for now.
 
 
- 
-### 4.Setup a namespace
+#### 4.Setup a namespace
 1. Target IBM Cloud Container Registry region:  `ibmcloud cr region-set us-south` 
 2. Let's create a namespace in the above target region `ibmcloud cr namespace-add namespace-check`
    **NOTE:If you got FAILED error try to change the name of the namespace**
 3. To ensure that your namespace is created `ibmcloud cr namespace-list`
 
 
-
-5. Push Docker image to your namespace
+#### 5. Push Docker image to your namespace
 We have already created our namespace in step 4, now let's push our local image to IBM container registry namespace.
 
 1. Run command `ibmcloud cr login`  to log into IBM Cloud Container Registry.
 2. Now you must able to see **Logged in to 'us.icr.io'**. Same region we created before.
 3. Run command `ibmcloud cr namespace` to see your namespace
-4. Now tag the image that is on our local machine. Run `docker tag hello-world:latest us.icr.io/namespace_check/nodeapp:v1` **NOTE: This command can be different for you so be careful <region>.icr.io/<my_namespace>/<image_repo>:<tag> **
+4. Now tag the image that is on our local machine. Run `docker tag hello-world:latest us.icr.io/namespace_check/nodeapp:v1` **NOTE: This command can be different for you so be careful "<region>.icr.io/<my_namespace>/<image_repo>:<tag>"
 5. Check if the image is successfully tagged `docker images`
 6. Run command `docker push us.icr.io/namespace_check/nodeapp:v1` to push our tagged image on IBM container registry namespace.
-`ibmcloud cr images` to check if your image is successfully pushed
+7. `ibmcloud cr images` to check if your image is successfully pushed
 
