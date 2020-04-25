@@ -1,5 +1,5 @@
 # Dockerize-with-IBM
-In this tutorial we will learn how contaniers are different from the perivous architectures and how IBM contianer registry make our development lifecycle easier.
+In this tutorial, we will learn how containers are different from the previous architectures and how IBM container registry make our development lifecycle easier.
 
 Steps :
 1. [History of different architectures before Docker Platform](#1-history-of-different-architectures-before-docker-platform)
