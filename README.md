@@ -55,7 +55,7 @@ A Docker registry stores Docker images. Docker Hub is a public registry that any
 
 ## 3. IBM Container Registry & Docker together
 
-
+![ibm&docker](ibm&dock.jpg)
 
 
 ## 4. Demo
