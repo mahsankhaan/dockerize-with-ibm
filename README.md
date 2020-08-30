@@ -4,7 +4,7 @@ In this tutorial, we will learn how containers are different from previous tradi
 ## Steps :
 1. [History of different architectures before Docker Platform](#1-history-of-different-architectures-before-docker-platform)
 2. [Docker Architecture](#2-docker-architecture)
-3. [IBM Container Registry & Docker together](#3-IBM-Container-Registry-Architecture)
+3. [IBM Container Registry & Docker together](#3-IBM-Container-Registry-&-Docker-together)
 4. [Demo](#4-demo)
 
 ## 1. History of different architectures before Docker Platform
@@ -48,11 +48,13 @@ __Image :__
 An image is essentially built from the instructions and bind the complete resouces of an application which become executable version.
 
 __Container :__
-When Docker run command executes an image, it creates one or multiple instances of containers.
+A container is a runnable instance of an image. We can create, start, stop, move, or delete a container using the Docker API.
 
-IBM Container Registry & Docker together
-What is registry ?
-A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use. 
+__Registry :__ 
+A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. We can even run our own private registry like we will do in the tutorial using IBM registry.
+
+## 3. IBM Container Registry & Docker together
+
 
 
 
