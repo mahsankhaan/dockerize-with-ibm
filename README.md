@@ -35,21 +35,25 @@ When the client install Docker, on the top of its OS and  docker daemon is insta
 
 __Client :__
 Once Docker is initialized on the client's platform they have the power of three simple commands to control the complete development life cycle.
+ 1. Docker build:
+ This will help us to execute the steps of how our application will execute, bypassing Dockerfile. The final result through this command will be a newly created 
+ image(instructions for creating a Docker container)
+ 1. Docker pull:
+ The image is already available on some registry, and you just need to pull that image on the local machine. 
+ 1. Docker run:
+ Once the image is available on the local machine we can run the image as a container using the run command and can create as many containers of that image as  
+ required.
 
-__Docker build__
-This will help us to execute the steps of how our application will execute, bypassing Dockerfile. The final result through this command will be a newly created image(instructions for creating a Docker container)
 
 What are containers? Actually, containers are running an instance of an image.
 
-__Docker pull:__
-The image is already available on some registry, and you just need to pull that image on the local machine. 
+
 
 IBM Container Registry & Docker together
 What is registry ?
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use. 
 
-__Docker run:__
-Once the image is available on the local machine we can run the image as a container using the run command and can create as many containers of that image as required.
+
 
 ## 4. Demo
 ### Pre-requisites:
