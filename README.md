@@ -24,7 +24,7 @@ Containers are one of the latest approaches in which when we install a container
 
 ## 2. Docker Architecture
 
-![docker](images/docker.svg)
+![docker](docker.svg)
 
 Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
 
@@ -44,10 +44,11 @@ Once Docker is initialized on the client's platform they have the power of three
  Once the image is available on the local machine we can run the image as a container using the run command and can create as many containers of that image as  
  required.
 
+__Image :__
+An image is essentially built from the instructions and bind the complete resouces of an application which become executable version.
 
-What are containers? Actually, containers are running an instance of an image.
-
-
+__Container :__
+When Docker run command executes an image, it creates one or multiple instances of containers.
 
 IBM Container Registry & Docker together
 What is registry ?
