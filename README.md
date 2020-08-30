@@ -24,28 +24,30 @@ Containers are one of the latest approaches in which when we install a container
 
 ## 2. Docker Architecture
 
-
 Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
 
 There are three main components in Docker Architecture :
 
-Docker Daemon :
+__Docker Daemon :__
 When the client install Docker, on the top of its OS and  docker daemon is installed and run directly within the host machine’s kernel which is actually responsible for all the major API calls between containers and registries.
 
-Client :
+__Client :__
 Once Docker is initialized on the client's platform they have the power of three simple commands to control the complete development life cycle.
 
-Docker build : This will help us to execute the steps of how our application will execute, bypassing Dockerfile. The final result through this command will be a newly created image(instructions for creating a Docker container)
+__Docker build__
+This will help us to execute the steps of how our application will execute, bypassing Dockerfile. The final result through this command will be a newly created image(instructions for creating a Docker container)
 
 What are containers? Actually, containers are running an instance of an image.
 
-Docker pull: The image is already available on some registry, and you just need to pull that image on the local machine. 
+__Docker pull:__
+The image is already available on some registry, and you just need to pull that image on the local machine. 
 
 IBM Container Registry & Docker together
 What is registry ?
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use. 
 
-Docker run: Once the image is available on the local machine we can run the image as a container using the run command and can create as many containers of that image as required.
+__Docker run:__
+Once the image is available on the local machine we can run the image as a container using the run command and can create as many containers of that image as required.
 
 ## 4. Demo
 ### Pre-requisites:
