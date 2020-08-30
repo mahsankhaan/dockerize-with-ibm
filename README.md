@@ -24,6 +24,8 @@ Containers are one of the latest approaches in which when we install a container
 
 ## 2. Docker Architecture
 
+![docker](images/docker.svg)
+
 Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
 
 There are three main components in Docker Architecture :
