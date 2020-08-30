@@ -1,6 +1,5 @@
 # Dockerize-with-IBM
-In this tutorial, we will learn how containers are different from the previous architectures and how IBM container registry make our development lifecycle easier.
-
+In this tutorial, we will learn how containers are different from previous traditional architectures and how IBM container registry make our CI/CD lifecycle easier.
 Steps :
 1. [History of different architectures before Docker Platform](#1-history-of-different-architectures-before-docker-platform)
 2. [Docker Architecture](#2-docker-architecture)
