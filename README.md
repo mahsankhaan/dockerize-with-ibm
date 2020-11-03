@@ -77,12 +77,7 @@ A Docker registry stores Docker images. Docker Hub is a public registry that any
 
 
 #### 1. Install IBM Cloud CLI
-1. For Mac and Linux™, run the following command: `curl -sL https://ibm.biz/idt-installer | bash`
-
-2. For Windows™ 10 Pro, run the following command as an administrator:
-`[Net.ServicePointManager]::SecurityProtocol = "Tls12, Tls11, Tls, Ssl3"; iex(New-Object   Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')`
-
-3. To verify that the CLI installed successfully, run the help command: `ibmcloud dev help`
+[Download](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/)
 
 #### 2. Lets Dockerize the application
 1. Run command  `git clone https://github.com/mahsankhaan/dockerize-with-ibm.git`.   
