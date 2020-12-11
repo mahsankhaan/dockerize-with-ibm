@@ -58,9 +58,9 @@ A Docker registry stores Docker images. Docker Hub is a public registry that any
 ![ibm&docker](ibm&dock.jpg)
 
 
-## 4. Demo
+## 4. Workshop
 ### Pre-requisites:
-1. Create IBM Cloud Account [Here](http://ibm.biz/dev-summit)
+1. Create IBM Cloud Account [Here](http://ibm.biz/dev-summit) (if you have already created account, then please sign-in using the same link) 
 
 2. Install docker on your local machine :
 [Mac](https://docs.docker.com/docker-for-mac/install/)
