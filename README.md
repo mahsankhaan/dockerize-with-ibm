@@ -6,7 +6,7 @@ In this tutorial, we will learn how containers are different from previous tradi
 2. [Docker Architecture](#2-docker-architecture)
 3. [IBM Container Registry and Docker together](#3-IBM-Container-Registry-and-Docker-together)
 4. [Workshop](#4-workshop)
-5. [How to request for certificate](#5-How-to-request-for-certificate)
+5. [How to request for certificate](#5-how-to-request-for-certificate)
 
 ## 1. History of different architectures before Docker Platform
 
@@ -143,7 +143,7 @@ Now our image is available on IBM container registry, let's pull the image to ou
 5. Open browser http://localhost:3000/ .
 6. Stop the container `docker stop 195d61ece4b0` , stop by the container_id
 
-#### 7. How to request for certificate
+## 7. How to request for certificate
 1. Complete the [workshop](#4-workshop) 
 2. Copy the path of pushed image done in step [5.6](#5-push-docker-image-to-your-namespace)
 3. Fill out the [Form](https://forms.gle/H78RnqEH4KMAe7KV7), in last question please copy the path.
