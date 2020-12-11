@@ -107,7 +107,7 @@ LINE 7: Describes what should be executed first when the Docker image is launchi
 
 
 #### 4. Setup a namespace
-1. Login in IBM container `ibm cr login`
+1. Login in IBM container `ibmcloud cr login`
 2. Target IBM Cloud Container Registry region:  `ibmcloud cr region-set us-south` 
 3. Let's create a namespace in the above target region `ibmcloud cr namespace-add namespace-check`
    **NOTE:If you got FAILED error try to change the name of the namespace**
