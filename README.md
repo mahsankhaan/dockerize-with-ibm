@@ -5,7 +5,7 @@ In this tutorial, we will learn how containers are different from previous tradi
 1. [History of different architectures before Docker Platform](#1-history-of-different-architectures-before-docker-platform)
 2. [Docker Architecture](#2-docker-architecture)
 3. [IBM Container Registry and Docker together](#3-IBM-Container-Registry-and-Docker-together)
-4. [Demo](#4-demo)
+4. [Workshop](#4-workshop)
 
 ## 1. History of different architectures before Docker Platform
 
