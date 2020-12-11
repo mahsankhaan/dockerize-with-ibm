@@ -6,7 +6,7 @@ In this tutorial, we will learn how containers are different from previous tradi
 2. [Docker Architecture](#2-docker-architecture)
 3. [IBM Container Registry and Docker together](#3-IBM-Container-Registry-and-Docker-together)
 4. [Workshop](#4-workshop)
-5. [How to request for certificate]
+5. [How to request for certificate](#5-How-to-request-for-certificate)
 
 ## 1. History of different architectures before Docker Platform
 
