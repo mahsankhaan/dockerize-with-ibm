@@ -1,6 +1,7 @@
-FROM node:12-alpine
+FROM node:latest       
+WORKDIR /app
+COPY package*.json ./
+COPY . /app
 RUN npm install
-COPY server.js .
-COPY . .
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "node", "server.js"]
