@@ -121,7 +121,7 @@ We have already created our namespace in step 4, now let's push our local image 
 
 1. Run command `ibmcloud cr login`  to log into IBM Cloud Container Registry.
 2. Now you must able to see **Logged in to 'us.icr.io'**. Same region we created before.
-3. Run command `ibmcloud cr namespace` to see your namespace
+3. Run command `ibmcloud cr namespaces` to see your namespace
 4. Now tag the image that is on our local machine. Run `docker tag hello-world:latest us.icr.io/namespace_check/nodeapp:v1` **NOTE: This command can be different for you so be careful** "<region>.icr.io/<my_namespace>/<image_repo>:<tag>"
 5. Check if the image is successfully tagged `docker images`
 6. Run command `docker push us.icr.io/namespace_check/nodeapp:v1` to push our tagged image on IBM container registry namespace.
